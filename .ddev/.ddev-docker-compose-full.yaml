@@ -22,7 +22,7 @@ services:
         command: []
         container_name: ddev-desafio-final-drupal-db
         environment:
-            COLUMNS: "94"
+            COLUMNS: "110"
             DDEV_DATABASE: mariadb:10.11
             DDEV_DATABASE_FAMILY: mysql
             DDEV_HOSTNAME: desafio-final-drupal.ddev.site
@@ -39,7 +39,7 @@ services:
             GOOS: linux
             HOST_DOCKER_INTERNAL_IP: 172.18.224.1
             IS_DDEV_PROJECT: "true"
-            LINES: "18"
+            LINES: "14"
             MYSQL_HISTFILE: /mnt/ddev-global-cache/mysqlhistory/desafio-final-drupal-db/mysql_history
             MYSQL_PWD: db
             PGDATABASE: db
@@ -71,6 +71,7 @@ services:
             - host_ip: 127.0.0.1
               mode: ingress
               protocol: tcp
+              published: "32789"
               target: 3306
         restart: "no"
         stop_grace_period: 1m0s
@@ -113,7 +114,7 @@ services:
             - /pre-start.sh
         container_name: ddev-desafio-final-drupal-web
         environment:
-            COLUMNS: "94"
+            COLUMNS: "110"
             COREPACK_ENABLE_DOWNLOAD_PROMPT: "0"
             COREPACK_HOME: /mnt/ddev-global-cache/corepack
             DDEV_COMPOSER_ROOT: /var/www/html
@@ -146,7 +147,7 @@ services:
             HTTP_EXPOSE: 80:80,8025:8025
             HTTPS_EXPOSE: 443:80,8026:8025
             IS_DDEV_PROJECT: "true"
-            LINES: "18"
+            LINES: "14"
             MYSQL_HISTFILE: /mnt/ddev-global-cache/mysqlhistory/desafio-final-drupal-web/mysql_history
             MYSQL_PWD: db
             NODE_EXTRA_CA_CERTS: /mnt/ddev-global-cache/mkcert/rootCA.pem
@@ -184,10 +185,12 @@ services:
             - host_ip: 127.0.0.1
               mode: ingress
               protocol: tcp
+              published: "32792"
               target: 80
             - host_ip: 127.0.0.1
               mode: ingress
               protocol: tcp
+              published: "32793"
               target: 443
         restart: "no"
         user: 1000:1000
