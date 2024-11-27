@@ -1,0 +1,23 @@
+uuid: 4dc328f5-a2c9-4156-ba1c-0641f3f5ccfa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.field.block_content.banner.body
+  module:
+    - text
+id: block_content.banner.default
+targetEntityType: block_content
+bundle: banner
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

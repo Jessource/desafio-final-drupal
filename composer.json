@@ -21,7 +21,9 @@
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
         "drupal/devel": "^5.0",
+        "drupal/leaflet": "^10.2",
         "drupal/pathauto": "^1.11",
+        "drupal/tara": "^11.0",
         "drush/drush": "^13.3"
     },
     "conflict": {

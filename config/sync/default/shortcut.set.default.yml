@@ -1,0 +1,8 @@
+uuid: 68db2e90-6bb1-4ef1-8cd1-bc44ec4358e5
+langcode: pt-br
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: U5VlGjd_SfV0Qm_EfnaynOfc549cNscFAx48JfYoMRI
+id: default
+label: Padrão

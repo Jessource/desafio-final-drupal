@@ -1,0 +1,19 @@
+uuid: 19153c75-1e14-446a-8b8d-b91df36149e5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descricao_destaques
+    - node.type.destaques
+id: node.destaques.field_descricao_destaques
+field_name: field_descricao_destaques
+entity_type: node
+bundle: destaques
+label: Descrição
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

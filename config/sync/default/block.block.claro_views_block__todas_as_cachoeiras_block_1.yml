@@ -1,0 +1,34 @@
+uuid: dba65369-960a-4fce-ad7a-3d48bd80a75b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.todas_as_cachoeiras
+  module:
+    - node
+    - views
+  theme:
+    - claro
+id: claro_views_block__todas_as_cachoeiras_block_1
+theme: claro
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:todas_as_cachoeiras-block_1'
+settings:
+  id: 'views_block:todas_as_cachoeiras-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping:
+    tid: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+  views_label: ''
+  items_per_page: '5'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      cachoeiras: cachoeiras

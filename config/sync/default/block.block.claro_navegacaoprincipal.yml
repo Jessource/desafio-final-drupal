@@ -1,0 +1,25 @@
+uuid: 33d9d560-9613-495a-8158-43d614b7a04b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - claro
+id: claro_navegacaoprincipal
+theme: claro
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegação principal'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

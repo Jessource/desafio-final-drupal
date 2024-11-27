@@ -1,0 +1,32 @@
+uuid: f87ec2a5-1b82-4ba5-bb0e-581a83bd9670
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.todos_os_parques
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__todos_os_parques_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:todos_os_parques-block_1'
+settings:
+  id: 'views_block:todos_os_parques-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: '3'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page

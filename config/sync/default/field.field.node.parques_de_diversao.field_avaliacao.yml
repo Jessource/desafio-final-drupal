@@ -1,0 +1,23 @@
+uuid: 4f5217dc-61ee-43cd-bb47-9f5fc0c6c1b4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_avaliacao
+    - node.type.parques_de_diversao
+id: node.parques_de_diversao.field_avaliacao
+field_name: field_avaliacao
+entity_type: node
+bundle: parques_de_diversao
+label: Avaliação
+description: 'Por favor, insira a avaliação geral do parque, com base na sua experiência. A avaliação deve ser uma nota numérica, onde 1 representa a avaliação mais baixa (muito ruim) e 5 representa a avaliação mais alta (excelente).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 5
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,10 @@
+uuid: 58aad160-1a57-4a84-8f81-a4032f898202
+langcode: pt-br
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nzL5d024NjXIX_8TlT6uFAu973lmfkmHklJC-2i9rAE
+id: medium
+label: 'Data média padrão'
+locked: false
+pattern: 'D, d/m/Y - H:i'

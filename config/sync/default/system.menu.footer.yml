@@ -1,0 +1,10 @@
+uuid: a9ab695e-ac2d-4be3-b75e-48bb39fc2bf2
+langcode: pt-br
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: Rodapé
+description: 'Links de informações do site'
+locked: true

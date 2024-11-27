@@ -1,0 +1,11 @@
+uuid: 75a8fb6b-601d-4cc0-93a5-df027ca03a84
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorias_de_parque
+id: taxonomy_term.categorias_de_parque
+target_entity_type_id: taxonomy_term
+target_bundle: categorias_de_parque
+default_langcode: site_default
+language_alterable: false

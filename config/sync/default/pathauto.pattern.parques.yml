@@ -1,0 +1,22 @@
+uuid: 830e8807-4488-4404-87ac-75a74848ee74
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: parques
+label: parques
+type: 'canonical_entities:node'
+pattern: '/parques/[node:title]'
+selection_criteria:
+  cc3289cd-1efe-4ef4-8c7f-8e1583dee77d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: cc3289cd-1efe-4ef4-8c7f-8e1583dee77d
+    context_mapping:
+      node: node
+    bundles:
+      parques_de_diversao: parques_de_diversao
+selection_logic: and
+weight: -5
+relationships: {  }

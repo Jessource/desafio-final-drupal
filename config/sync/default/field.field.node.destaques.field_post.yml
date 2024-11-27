@@ -1,0 +1,38 @@
+uuid: 5abca3f1-cf8e-4e49-b38d-829520781fcd
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post
+    - node.type.destaques
+  module:
+    - image
+id: node.destaques.field_post
+field_name: field_post
+entity_type: node
+bundle: destaques
+label: post
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

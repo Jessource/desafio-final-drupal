@@ -22,7 +22,7 @@ services:
         command: []
         container_name: ddev-desafio-final-drupal-db
         environment:
-            COLUMNS: "110"
+            COLUMNS: "90"
             DDEV_DATABASE: mariadb:10.11
             DDEV_DATABASE_FAMILY: mysql
             DDEV_HOSTNAME: desafio-final-drupal.ddev.site
@@ -71,7 +71,7 @@ services:
             - host_ip: 127.0.0.1
               mode: ingress
               protocol: tcp
-              published: "32789"
+              published: "32796"
               target: 3306
         restart: "no"
         stop_grace_period: 1m0s
@@ -114,7 +114,7 @@ services:
             - /pre-start.sh
         container_name: ddev-desafio-final-drupal-web
         environment:
-            COLUMNS: "110"
+            COLUMNS: "90"
             COREPACK_ENABLE_DOWNLOAD_PROMPT: "0"
             COREPACK_HOME: /mnt/ddev-global-cache/corepack
             DDEV_COMPOSER_ROOT: /var/www/html
@@ -185,12 +185,12 @@ services:
             - host_ip: 127.0.0.1
               mode: ingress
               protocol: tcp
-              published: "32792"
+              published: "32797"
               target: 80
             - host_ip: 127.0.0.1
               mode: ingress
               protocol: tcp
-              published: "32793"
+              published: "32798"
               target: 443
         restart: "no"
         user: 1000:1000

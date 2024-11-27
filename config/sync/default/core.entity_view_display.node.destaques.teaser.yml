@@ -1,0 +1,37 @@
+uuid: 47f65dbc-90b4-45bf-aeeb-4386d88e10e1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.destaques.body
+    - field.field.node.destaques.field_descricao_destaques
+    - field.field.node.destaques.field_post
+    - field.field.node.destaques.field_titulo
+    - node.type.destaques
+  module:
+    - text
+    - user
+id: node.destaques.teaser
+targetEntityType: node
+bundle: destaques
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_descricao_destaques: true
+  field_post: true
+  field_titulo: true
+  langcode: true

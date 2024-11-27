@@ -1,0 +1,9 @@
+uuid: 37408a9b-8981-42bb-a65c-c9dc94817453
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'Categorias de Parque'
+vid: categorias_de_parque
+description: null
+weight: 0
+new_revision: false

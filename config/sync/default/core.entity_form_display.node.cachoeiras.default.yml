@@ -1,0 +1,135 @@
+uuid: 286f07c8-d491-44d4-84bb-724911bd7e06
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.cachoeiras.field_altura
+    - field.field.node.cachoeiras.field_descricao
+    - field.field.node.cachoeiras.field_dificuldade
+    - field.field.node.cachoeiras.field_imagem_da_cachoeira
+    - field.field.node.cachoeiras.field_instrucoes_para_acesso
+    - field.field.node.cachoeiras.field_localizacao
+    - field.field.node.cachoeiras.field_site_oficial
+    - field.field.node.cachoeiras.layout_builder__layout
+    - image.style.thumbnail
+    - node.type.cachoeiras
+  module:
+    - image
+    - link
+    - path
+id: node.cachoeiras.default
+targetEntityType: node
+bundle: cachoeiras
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_altura:
+    type: number
+    weight: 126
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_descricao:
+    type: string_textarea
+    weight: 123
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_dificuldade:
+    type: options_select
+    weight: 129
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_imagem_da_cachoeira:
+    type: image_image
+    weight: 127
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_instrucoes_para_acesso:
+    type: string_textarea
+    weight: 125
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_localizacao:
+    type: options_select
+    weight: 128
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_site_oficial:
+    type: link_default
+    weight: 124
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

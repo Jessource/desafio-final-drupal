@@ -1,0 +1,251 @@
+uuid: a77120ab-1a7e-4981-b4d4-7092b211f7b9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.parques_de_diversao.field_atracoes_principais
+    - field.field.node.parques_de_diversao.field_avaliacao
+    - field.field.node.parques_de_diversao.field_categoria
+    - field.field.node.parques_de_diversao.field_descricao_parque
+    - field.field.node.parques_de_diversao.field_imagem
+    - field.field.node.parques_de_diversao.field_localizacao
+    - node.type.parques_de_diversao
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: titulo
+          context_mapping: {  }
+        components:
+          363ff31f-f7f5-408b-b745-645010b81c0f:
+            uuid: 363ff31f-f7f5-408b-b745-645010b81c0f
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:title'
+              label: Título
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: imagem
+          context_mapping: {  }
+        components:
+          5e1a22f0-1008-49df-a0e9-fcc539a5a4a9:
+            uuid: 5e1a22f0-1008-49df-a0e9-fcc539a5a4a9
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_imagem'
+              label: Imagem
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          47595b91-b214-47d2-b194-d8649604fce7:
+            uuid: 47595b91-b214-47d2-b194-d8649604fce7
+            region: content
+            configuration:
+              id: 'extra_field_block:node:parques_de_diversao:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          27e74c51-e3ba-4657-b077-3e7e10d388b1:
+            uuid: 27e74c51-e3ba-4657-b077-3e7e10d388b1
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_descricao_parque'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          31c61227-224e-4950-8169-c2c5533a353a:
+            uuid: 31c61227-224e-4950-8169-c2c5533a353a
+            region: content
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_atracoes_principais'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: colunas
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          b30ce901-e72a-4957-8cab-f9b6934aee10:
+            uuid: b30ce901-e72a-4957-8cab-f9b6934aee10
+            region: first
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_localizacao'
+              label: Localização
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          c3e407fa-262b-469b-81b3-98e2e78ddb3d:
+            uuid: c3e407fa-262b-469b-81b3-98e2e78ddb3d
+            region: second
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_avaliacao'
+              label: Avaliação
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d3d284df-d1ec-45f1-a6d0-056b1dbe7675:
+            uuid: d3d284df-d1ec-45f1-a6d0-056b1dbe7675
+            region: third
+            configuration:
+              id: 'field_block:node:parques_de_diversao:field_categoria'
+              label: Categoria
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.parques_de_diversao.default
+targetEntityType: node
+bundle: parques_de_diversao
+mode: default
+content:
+  field_atracoes_principais:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_avaliacao:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_descricao_parque:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_imagem:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_localizacao:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

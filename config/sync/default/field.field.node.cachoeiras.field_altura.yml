@@ -1,0 +1,23 @@
+uuid: f1e29832-9a13-4d41-a8ca-679057fb71fc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_altura
+    - node.type.cachoeiras
+id: node.cachoeiras.field_altura
+field_name: field_altura
+entity_type: node
+bundle: cachoeiras
+label: Altura
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

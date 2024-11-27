@@ -1,0 +1,37 @@
+uuid: f4398094-8dfd-4d7a-83f6-481c446fb22d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cachoeiras.field_altura
+    - field.field.node.cachoeiras.field_descricao
+    - field.field.node.cachoeiras.field_dificuldade
+    - field.field.node.cachoeiras.field_imagem_da_cachoeira
+    - field.field.node.cachoeiras.field_instrucoes_para_acesso
+    - field.field.node.cachoeiras.field_localizacao
+    - field.field.node.cachoeiras.field_site_oficial
+    - field.field.node.cachoeiras.layout_builder__layout
+    - node.type.cachoeiras
+  module:
+    - user
+id: node.cachoeiras.teaser
+targetEntityType: node
+bundle: cachoeiras
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_altura: true
+  field_descricao: true
+  field_dificuldade: true
+  field_imagem_da_cachoeira: true
+  field_instrucoes_para_acesso: true
+  field_localizacao: true
+  field_site_oficial: true
+  langcode: true
+  layout_builder__layout: true

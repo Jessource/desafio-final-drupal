@@ -1,0 +1,11 @@
+uuid: dd9ee3f7-a109-466f-929b-452f99b00792
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.destaques
+id: node.destaques
+target_entity_type_id: node
+target_bundle: destaques
+default_langcode: site_default
+language_alterable: false

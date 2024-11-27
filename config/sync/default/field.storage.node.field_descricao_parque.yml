@@ -1,0 +1,19 @@
+uuid: 218066f2-4dc9-4877-bf5d-3411a7c95d7b
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_descricao_parque
+field_name: field_descricao_parque
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

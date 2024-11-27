@@ -1,0 +1,24 @@
+uuid: 425da026-27a5-4c02-8904-0620c25e0e57
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.destaques
+  module:
+    - text
+id: node.destaques.body
+field_name: body
+entity_type: node
+bundle: destaques
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
