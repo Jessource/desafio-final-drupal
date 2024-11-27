@@ -5,7 +5,17 @@ Este projeto foi desenvolvido como parte do **Bootcamp New Thinkers 2024**, uma 
 
 O objetivo do bootcamp é preparar profissionais para enfrentar os desafios reais do mercado de TI, com foco em **boas práticas de desenvolvimento**, **inovação** e **tecnologias modernas**. 🚀
 
-Durante o programa, aplicamos conhecimentos teóricos e práticos em formato de bootcamp com uma imersão completa em trilhas de conhecimento específicas e acompanhamento de profissionais utilizando ferramentas de ponta como **Drupal**, **DDEV**, **Docker** e **WSL**.
+Durante o programa, aplicamos conhecimentos teóricos e práticos em formato de bootcamp com uma imersão completa em trilhas de conhecimento específicas e acompanhamento de profissionais utilizando ferramentas de ponta como **Drupal**, **DDEV**, **Docker** e **WSL**. Dá uma olhadinha no que fizemos com o drupal 11:
+
+
+![Página incicial de bem vindo do site](https://github.com/Jessource/desafio-final-drupal/blob/main/assets/pagina-inicial.jpg?raw=true)
+![Página incicial de bem vindo do site](https://github.com/Jessource/desafio-final-drupal/blob/main/assets/lista-cachoeiras.jpg?raw=true)
+![Página incicial de bem vindo do site](https://github.com/Jessource/desafio-final-drupal/blob/main/assets/lista-parques.jpg?raw=true)
+![Página incicial de bem vindo do site](https://github.com/Jessource/desafio-final-drupal/blob/main/assets/posts.jpg?raw=true)
+![Página incicial de bem vindo do site](https://github.com/Jessource/desafio-final-drupal/blob/main/assets/parque.jpg?raw=true)
+![Página incicial de bem vindo do site](https://github.com/Jessource/desafio-final-drupal/blob/main/assets/cachoeira.jpg?raw=true)
+
+
 
 
 
